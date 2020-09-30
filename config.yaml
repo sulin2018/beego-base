@@ -1,0 +1,19 @@
+AppName: "beego-base"
+RunMode: "dev" # test prod
+AutoRender: false # api项目 关闭模板渲染
+HTTPPort: 9002
+
+MySQLInfo: "root:123456@tcp(192.168.100.13:3306)/beegobase?charset=utf8mb4"
+# MySQLUser: "root"
+# MySQLPassword: "123456"
+# MySQLHost: "192.168.100.13"
+# MySQLDBName: "beegobase"
+
+SessionOn: true
+SessionProvider: "mysql"
+SessionName: "beegobase"
+SessionHashKey: "oWyvxZgbT2hpXjoqeigB"
+SessionProviderConfig: "root:123456@tcp(192.168.100.13:3306)/beegobase?charset=utf8mb4"
+SessionGCMaxLifetime: 3600000 # 过期时间 1000h
+SessionAutoSetCookie: true
+SessionCookieLifeTime: 3600000 # Cookie过期时间

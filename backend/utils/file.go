@@ -36,7 +36,7 @@ func CheckPermission(src string) bool {
 
 // IsNotExistMkDir create a directory if it does not exist
 func IsNotExistMkDir(src string) error {
-	if notExist := IsNotExist(src); notExist == true {
+	if IsNotExist(src) {
 		if err := MkDir(src); err != nil {
 			return err
 		}

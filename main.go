@@ -45,7 +45,7 @@ func InitLogs() {
 	logs.EnableFuncCallDepth(true)
 	logs.SetLogFuncCallDepth(3)
 
-	// 文件和控制台都会输出日志
+	// 输出日志到文件
 	err = logs.SetLogger(logs.AdapterFile, `{
 			"filename":"logs/beegobase.log",
 			"level":6
